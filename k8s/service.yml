@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: quaily
+  name: cloud
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "quaily"
+  - name: "cloud"
     port: 8080
   selector:
-    app: quaily
+    app: cloud
