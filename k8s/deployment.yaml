@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cloud
+  name: ywer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cloud
+      app: ywer
   template:
     metadata:
       labels:
-        app: cloud
+        app: ywer
     spec:
       containers:
-      - image: okteto.dev/cloud:latest
-        name: cloud
+      - image: okteto.dev/ywer:latest
+        name: ywer
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "moviesjoy.to"
+          value: "pixabay.com"
         - name: Vless_UUID
-          value: "30730823-d7e0-4f42-b10a-bc5bb562826c"
+          value: "3d147969-24f3-4760-b093-63b65fac91e1"
         - name: Vless_Path
-          value: "/AHtfG6"
+          value: "/Grtf5utew"
         - name: Vmess_UUID
-          value: "30730823-d7e0-4f42-b10a-bc5bb562826c"
+          value: "3d147969-24f3-4760-b093-63b65fac91e1"
         - name: Vmess_Path
-          value: "/OPRECX"
+          value: "/LuteFs"
         - name: Share_Path
-          value: "/Share412"
+          value: "/Share579"
