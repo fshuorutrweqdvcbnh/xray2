@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: quaily
+  name: cloud
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: quaily
+      app: cloud
   template:
     metadata:
       labels:
-        app: quaily
+        app: cloud
     spec:
       containers:
-      - image: okteto.dev/quaily:latest
-        name: quaily
+      - image: okteto.dev/cloud:latest
+        name: cloud
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.flexclip.com"
+          value: "moviesjoy.to"
         - name: Vless_UUID
-          value: "a32b2ac0-1bad-4bcb-a266-66136c5a984a"
+          value: "30730823-d7e0-4f42-b10a-bc5bb562826c"
         - name: Vless_Path
-          value: "/FHOWAS"
+          value: "/AHtfG6"
         - name: Vmess_UUID
-          value: "a32b2ac0-1bad-4bcb-a266-66136c5a984a"
+          value: "30730823-d7e0-4f42-b10a-bc5bb562826c"
         - name: Vmess_Path
-          value: "/CR46yds"
+          value: "/OPRECX"
         - name: Share_Path
-          value: "/Share021"
+          value: "/Share412"
