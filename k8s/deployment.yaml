@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: smile
+  name: erect
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: smile
+      app: erect
   template:
     metadata:
       labels:
-        app: smile
+        app: erect
     spec:
       containers:
-      - image: okteto.dev/smile:latest
-        name: smile
+      - image: okteto.dev/erect:latest
+        name: erect
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "beauty-upgrade.tw"
+          value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "2e2fcebe-ecd3-4826-a8de-c259ae154e45"
+          value: "6db0abfd-6b8d-4c2a-b7e6-462a93677175"
         - name: Vless_Path
-          value: "/syTYrt"
+          value: "/qftrvu67"
         - name: Vmess_UUID
-          value: "2e2fcebe-ecd3-4826-a8de-c259ae154e45"
+          value: "6db0abfd-6b8d-4c2a-b7e6-462a93677175"
         - name: Vmess_Path
-          value: "/ascuprf"
+          value: "/SDFVYJU"
         - name: Share_Path
-          value: "/Share433"
+          value: "/Share312"
